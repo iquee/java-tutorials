@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class TestDataTypes {
     public static void main(String[] args) {
         {
-            // Given a input number, check in which pimitive type are capable to store that input
+            /* Given a input number, check in which primitive type are capable to store that input */
+            System.out.println("Type a number: ");
             Scanner sc = new Scanner(System.in);
             int t = sc.nextInt();
             for (int i = 0; i < t; i++) {

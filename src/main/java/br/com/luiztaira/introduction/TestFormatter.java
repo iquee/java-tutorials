@@ -18,6 +18,7 @@ public class TestFormatter {
         System.out.printf("%n%n");
 
         System.out.println("String & Integer manipulate:");
+        System.out.printf("%1$-10s %2$05d", "value", 100);
         // ex.: %1$-10s, where
         // 1$ position of the argument in argument list. In this case: "value"
         // -   left align
@@ -27,7 +28,6 @@ public class TestFormatter {
         // 2$ position of the argument in argument list. In this case: 100
         // 0   insert extra 0, if necessary, in the integer
         // 5d  integer minimum field width
-        System.out.printf("%1$-10s %2$05d", "value", 100);
     }
 
 }
