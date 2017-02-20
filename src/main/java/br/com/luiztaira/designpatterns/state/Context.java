@@ -1,13 +1,10 @@
 package br.com.luiztaira.designpatterns.state;
 
-/**
- * Created by Ique on 19/02/17.
- */
-public class Contexto {
+public class Context {
 
     private State state;
 
-    public Contexto() {
+    public Context() {
         this.state = null;
     }
 

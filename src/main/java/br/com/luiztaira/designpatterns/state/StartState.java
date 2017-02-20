@@ -1,15 +1,15 @@
 package br.com.luiztaira.designpatterns.state;
 
 /**
- * Created by Ique on 19/02/17.
+ * Class that represent a started state
  */
 public class StartState implements State {
-    public void doAction(Contexto contexo) {
-        System.out.println("Starting state");
-        contexo.setState(this);
+    public void doAction(Context contex) {
+        System.out.println("Starting state...");
+        contex.setState(this);
     }
 
     public String toString(){
-        return "Start state";
+        return "State started";
     }
 }

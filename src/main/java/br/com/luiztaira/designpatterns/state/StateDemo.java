@@ -1,21 +1,21 @@
 package br.com.luiztaira.designpatterns.state;
 
 /**
- * Created by Ique on 19/02/17.
+ * Run Design Pattern State
  */
 public class StateDemo {
 
     public static void main(String[] args) {
-        Contexto contexto = new Contexto();
+        Context context = new Context();
 
         StartState startState = new StartState();
-        startState.doAction(contexto);
+        startState.doAction(context);
 
-        System.out.println(contexto.getState());
+        System.out.println(context.getState());
 
         StopState stop = new StopState();
-        stop.doAction(contexto);
+        stop.doAction(context);
 
-        System.out.println(contexto.getState());
+        System.out.println(context.getState());
     }
 }

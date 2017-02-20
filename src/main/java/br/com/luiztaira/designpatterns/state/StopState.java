@@ -1,16 +1,16 @@
 package br.com.luiztaira.designpatterns.state;
 
 /**
- * Created by Ique on 19/02/17.
+ * Class that represent a stopped state
  */
 public class StopState implements State{
 
-    public void doAction(Contexto contexo) {
-        System.out.println("Stoping state");
-        contexo.setState(this);
+    public void doAction(Context contex) {
+        System.out.println("Stoping state...");
+        contex.setState(this);
     }
 
     public String toString(){
-        return "Stop state";
+        return "State stopped";
     }
 }
