@@ -1,5 +1,8 @@
 package br.com.luiztaira.designpatterns.strategy;
 
+/**
+ * Run design pattern Stategy
+ */
 public class DemoTransactionStrategy {
     public static void main(String[] args) {
         Account myAccount = new Account(500);

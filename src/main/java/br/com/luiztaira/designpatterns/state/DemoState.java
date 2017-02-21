@@ -3,7 +3,7 @@ package br.com.luiztaira.designpatterns.state;
 /**
  * Run Design Pattern State
  */
-public class StateDemo {
+public class DemoState {
 
     public static void main(String[] args) {
         Context context = new Context();

@@ -1,6 +1,6 @@
 package br.com.luiztaira.designpatterns.templatemethod;
 
-public class TemplateMehotdDemo {
+public class DemoTemplateMethod {
 
     public static void main(String[] args) {
         BuyItem item = new BuyItem();
