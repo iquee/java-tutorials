@@ -1,0 +1,2 @@
+In template pattern, an abstract class defines a wat to execute its methods.
+Subclasses needed to implements method and override others(if necessary)
