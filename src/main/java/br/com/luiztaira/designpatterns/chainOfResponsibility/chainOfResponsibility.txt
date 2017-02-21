@@ -1,0 +1,1 @@
+Design pattern chain of responsability, where each receiver contains reference to another receiver. If the object can't finish the request, then the next agent will try to finish
