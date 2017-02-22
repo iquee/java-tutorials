@@ -12,9 +12,9 @@ public class DemoChainOfResponsibility {
         director.next(noPermission);
 
         Order order =
-                //new Order(450.00);
+                new Order(450.00);
                 //new Order(550.00); // directors
-                new Order(1200.00); //no one
+                //new Order(1200.00); //no one
 
         System.out.println("Order price: " + order.getPrice() + "\n");
         System.out.println(manager.approval(order));
