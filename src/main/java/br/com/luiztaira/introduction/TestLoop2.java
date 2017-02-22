@@ -6,7 +6,7 @@ public class TestLoop2 {
     public static void main(String[] argh) {
         /**
         First number, is the iteration
-        Given 3 input number(a, b, n), calculate:
+        Given 3 more numbers(a, b, n) and calculate:
         (a+2^0*b), (a+2^1*b),...,(a+2^0*b + a+2^1*b + ... + a+2^n-1*b)
         */
         Scanner in = new Scanner(System.in);

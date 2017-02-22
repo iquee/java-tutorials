@@ -1,0 +1,1 @@
+It allows several actions to be executed transparently to the main class, reducing the coupling between these actions, making easier the maintenance and code evolution
