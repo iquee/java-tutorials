@@ -1,0 +1,1 @@
+This design pattern allowed to add some behavior to an existing object
