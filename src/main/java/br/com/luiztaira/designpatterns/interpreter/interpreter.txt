@@ -1,0 +1,1 @@
+This pattern involves implementing an expression interface which tells to interpret a particular context.
