@@ -1,5 +1,7 @@
 package br.com.luiztaira.designpatterns.interpreter;
 
+import br.com.luiztaira.designpatterns.visitor.Visitor;
+
 public class Number implements Expression{
 
     private int number;
@@ -9,6 +11,14 @@ public class Number implements Expression{
     }
 
     public int check() {
+        return this.number;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.printNumber(this);
+    }
+
+    public int getNumber() {
         return this.number;
     }
 }
