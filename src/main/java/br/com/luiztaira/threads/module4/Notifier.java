@@ -2,21 +2,20 @@ package br.com.luiztaira.threads.module4;
 
 public class Notifier implements Runnable{
 
-    private Message msg;
+    private Object obj;
 
-    public Notifier(Message msg) {
-        this.msg = msg;
+    public Notifier(Object obj) {
+        this.obj = obj;
     }
 
     public void run() {
         String name = Thread.currentThread().getName();
-        System.out.println(name+" started");
         try {
             Thread.sleep(1000);
-            synchronized (msg) {
-                msg.setMsg(name+" Notifier work done");
-                msg.notify();
-                // msg.notifyAll();
+            synchronized (obj) {
+                System.out.println("");
+                System.out.println(name+" started");
+                obj.notifyAll();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();

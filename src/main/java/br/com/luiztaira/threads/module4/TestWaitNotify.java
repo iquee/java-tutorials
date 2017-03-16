@@ -3,17 +3,18 @@ package br.com.luiztaira.threads.module4;
 public class TestWaitNotify {
 
     public static void main(String[] args) {
-        Message msg = new Message("process it");
+        Object obj = new Object();
 
-        Waiter waiter = new Waiter(msg);
-        new Thread(waiter,"waiter").start();
+        System.out.println("Threads started...");
+        System.out.println("");
 
-        Waiter waiter1 = new Waiter(msg);
-        new Thread(waiter1, "waiter1").start();
+        ProcessObject object1 = new ProcessObject(obj);
+        new Thread(object1, "Object1").start();
 
-        Notifier notifier = new Notifier(msg);
-        new Thread(notifier, "notifier").start();
+        ProcessObject object2 = new ProcessObject(obj);
+        new Thread(object2, "Object2").start();
 
-        System.out.println("All the threads are started");
+        Notifier notifier = new Notifier(obj);
+        new Thread(notifier, "Notification").start();
     }
 }
