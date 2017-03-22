@@ -5,8 +5,7 @@ public class TestWaitNotify {
     public static void main(String[] args) {
         Object obj = new Object();
 
-        System.out.println("Threads started...");
-        System.out.println("");
+        System.out.println("Threads started...\n");
 
         ProcessObject object1 = new ProcessObject(obj);
         new Thread(object1, "Object1").start();

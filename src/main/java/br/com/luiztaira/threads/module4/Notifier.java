@@ -13,8 +13,7 @@ public class Notifier implements Runnable{
         try {
             Thread.sleep(1000);
             synchronized (obj) {
-                System.out.println("");
-                System.out.println(name+" started");
+                System.out.println("\n" + name+" started\n");
                 obj.notifyAll();
             }
         } catch (InterruptedException e) {

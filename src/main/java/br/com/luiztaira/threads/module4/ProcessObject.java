@@ -17,10 +17,9 @@ public class ProcessObject implements Runnable{
             }catch(InterruptedException e){
                 e.printStackTrace();
             }
-            System.out.println("");
             System.out.println(name+ " received the notification || "+System.currentTimeMillis());
             //processing the object
-            System.out.println("Processing " + name);
+            System.out.println("Processing " + name  +"\n");
         }
     }
 }
