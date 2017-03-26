@@ -37,8 +37,9 @@ public class Palindromes {
     }
 
     /**
-     *  This method works fine, but is very inefficient,
-     *  because it uses a lot of memory.
+     *  This method works fine and solve the problem,
+     *  but is very inefficient because it uses a lot of memory.
+     *
      *  Here is being used the following java methods:
      *  - String.equals()
      *  - StringBuilder.reverse()
@@ -58,8 +59,9 @@ public class Palindromes {
     /**
      * Better performance then isPalindrome1
      *
-     * No extra memory is used here
-     * and no objects are instantiated
+     * No extra memory is used here,
+     * no objects are instantiated
+     * and only half of string is checked
      *
      * @param str
      * @return
