@@ -7,7 +7,7 @@ public class Recursion {
      * - very similar to iteration: for OR while
      * @param n
      */
-    public void tailRecursion(int n){
+    public static void tailRecursion(int n){
         if(n == 0) return;
 
         System.out.println(n);
@@ -20,7 +20,7 @@ public class Recursion {
      * OS system stack memory in order to store reference of method
      * @param n
      */
-    public void headRecursion(int n){
+    public static void headRecursion(int n){
         if(n == 0) return;
 
         headRecursion(n-1);
@@ -29,9 +29,8 @@ public class Recursion {
     }
 
     public static void main(String[] args) {
-        Recursion recursion = new Recursion();
-        recursion.tailRecursion(5);
+        tailRecursion(5);
         System.out.println("-----");
-        recursion.headRecursion(5);
+        headRecursion(5);
     }
 }
