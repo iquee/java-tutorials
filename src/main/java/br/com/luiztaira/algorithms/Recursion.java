@@ -3,11 +3,13 @@ package br.com.luiztaira.algorithms;
 public class Recursion {
 
     /**
-     * Tail recursion will print in descending order
+     * Tail recursion: the call of recursion occurs at the end of the method
+     * and will print in descending order.
      * - very similar to iteration: for OR while
      * @param n
      */
     public static void tailRecursion(int n){
+        //base case
         if(n == 0) return;
 
         System.out.println(n);
@@ -16,11 +18,13 @@ public class Recursion {
     }
 
     /**
-     * Head recursion will print in ascending order
-     * OS system stack memory in order to store reference of method
+     * Head recursion: the call of recursion occurs at the beginning
+     * and will print in ascending order.
+     *
      * @param n
      */
     public static void headRecursion(int n){
+        // base case
         if(n == 0) return;
 
         headRecursion(n-1);
