@@ -3,7 +3,7 @@ package br.com.luiztaira.introduction;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class TestConcurrency {
+public class TestCurrency {
 
     public static void main(String[] args) {
         double price = 12324.134;
