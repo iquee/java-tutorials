@@ -1,4 +1,4 @@
-package br.com.luiztaira.introduction.strings;
+package br.com.luiztaira.introduction;
 
 import java.util.*;
 
@@ -6,17 +6,20 @@ public class TestString {
 
     public static void main(String[] args) {
 
-        // 1
+        // 1 - lexicographically/comparing
         //test1();
 
-        // 2
+        // 2 - substring
         //test2();
 
-        // 3
+        // 3 - lexicographically
         //test3();
 
-        // 4
-        System.out.println(test4());
+        // 4 - Palindrome
+        //test4();
+
+        // 5 - Regex
+        test5();
 
     }
 
@@ -79,14 +82,38 @@ public class TestString {
     /**
      * Palindrome
      */
-    static boolean test4(){
+    static void test4(){
         Scanner sc = new Scanner(System.in);
         String string = sc.next();
 
         for (int i = 0; i < string.length() / 2; i++)
-            if(string.charAt(i) != string.charAt(string.length() - i - 1))
-                return false;
-        return true;
+            if(string.charAt(i) != string.charAt(string.length() - i - 1)){
+                System.out.println("No");
+                return;
+            }
+        System.out.println("Yes");
+    }
+
+    /**
+     * Regex: split string without special chars
+     * print size of array
+     */
+    static void test5(){
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        s = s.trim();
+        if (s.length()>400000){
+            return ;
+        }else if (s.length()==0){
+            System.out.println(0);
+            return ;
+        }else {
+            // Regex:
+            String[] words = s.split("[!,?.*_'@\\ ]+");
+            System.out.println(words.length);
+            for (String word : words)
+                System.out.println(word);
+        }
     }
 
 }

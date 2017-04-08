@@ -14,9 +14,8 @@ public class TestCurrency {
 
         System.out.println("China: " + NumberFormat.getCurrencyInstance(Locale.CHINA).format(price));
 
-        System.out.println("France: " + NumberFormat.getCurrencyInstance(Locale.FRANCE).format(price));
-
-
+        Locale brazil = new Locale("pt", "Br");
+        System.out.println("Brazil: " + NumberFormat.getCurrencyInstance(brazil).format(price));
 
     }
 }
