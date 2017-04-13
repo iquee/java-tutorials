@@ -40,7 +40,7 @@ public class MergeSort1 {
      * @param numbers2
      * @return
      */
-    private static int[] mergeAndSortArrays(int[] numbers1, int[] numbers2){
+    static int[] mergeAndSortArrays(int[] numbers1, int[] numbers2){
         int[] sortedArray = new int[numbers1.length + numbers2.length];
         int i = 0;
 

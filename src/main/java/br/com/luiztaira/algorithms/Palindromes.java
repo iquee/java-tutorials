@@ -15,7 +15,7 @@ public class Palindromes {
      * @param str
      * @return
      */
-    public static boolean isPalindrome1(String str) {
+    static boolean isPalindrome1(String str) {
         return str.equals(
                 new StringBuilder(str)
                         .reverse()
@@ -32,7 +32,7 @@ public class Palindromes {
      * @param str
      * @return
      */
-    public static boolean isPalindrome2(String str) {
+    static boolean isPalindrome2(String str) {
         int size = str.length();
         for (int i = 0; i < size/2; i++)
             if (str.charAt(i) != str.charAt(size-i-1))

@@ -22,7 +22,7 @@ public class MergeSort3 {
             System.out.println(number);
     }
 
-    private static void buildArray(int[] numbers){
+    static void buildArray(int[] numbers){
         Random random = new Random();
         for (int i = 0; i < numbers.length; i++){
             numbers[i] = random.nextInt();
@@ -39,7 +39,7 @@ public class MergeSort3 {
      * @param begin
      * @param end
      */
-    private static void sort(int[] array, int begin, int end){
+    static void sort(int[] array, int begin, int end){
         int size = end - begin;
         if (size > 1){
             int middle = (begin + end) / 2;
@@ -59,7 +59,7 @@ public class MergeSort3 {
      * @param end
      * @return a sorted chunk
      */
-    private static int[] intercalate(int[] numbers, int begin, int middle, int end){
+    static int[] intercalate(int[] numbers, int begin, int middle, int end){
         int[] newArray = new int[end - begin];
         int current = 0;
         int current1 = begin;

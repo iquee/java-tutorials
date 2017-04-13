@@ -19,7 +19,7 @@ public class QuickSort {
             System.out.println(number);
     }
 
-    private static void quickSort(int[] numbers, int from, int until){
+    static void quickSort(int[] numbers, int from, int until){
         int size = until - from;
         if (size > 1){
             int pivotPosition = partition(numbers, from, until);
@@ -38,7 +38,7 @@ public class QuickSort {
      * @param end
      * @return
      */
-    private static int partition(int[] numbers, int begin, int end) {
+    static int partition(int[] numbers, int begin, int end) {
         int countOfSmallNumbers = 0;
         int pivot = numbers[end - 1];
         for (int current = 0;current < end - 1; current++){

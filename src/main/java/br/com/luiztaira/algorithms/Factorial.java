@@ -21,7 +21,7 @@ public class Factorial {
      * @param n
      * @return
      */
-    private static int factorial(int n){
+    static int factorial(int n){
         if (n == 1) return 1;
 
         return n * factorial(n - 1);
@@ -36,7 +36,7 @@ public class Factorial {
      * @param n
      * @return
      */
-    private static int factorialWithAcumulator(int accumulator, int n){
+    static int factorialWithAcumulator(int accumulator, int n){
         // base case
         if(n == 1) return accumulator;
 

@@ -8,7 +8,7 @@ public class Recursion {
      * - very similar to iteration: for OR while
      * @param n
      */
-    public static void tailRecursion(int n){
+    static void tailRecursion(int n){
         //base case
         if(n == 0) return;
 
@@ -23,7 +23,7 @@ public class Recursion {
      *
      * @param n
      */
-    public static void headRecursion(int n){
+    static void headRecursion(int n){
         // base case
         if(n == 0) return;
 

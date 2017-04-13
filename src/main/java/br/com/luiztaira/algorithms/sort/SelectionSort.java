@@ -23,7 +23,7 @@ public class SelectionSort {
         System.out.println("Sorted numbers: ");
         // sorting
         for (int j = 0; j < numbers.length; j++){
-            int small = SelectionSort.getSmallest(numbers, j);
+            int small = getSmallest(numbers, j);
 
             int actualNumber = numbers[j];
             int smallestNumber = numbers[small];
@@ -45,7 +45,7 @@ public class SelectionSort {
      * @param position
      * @return
      */
-    public static int getSmallest(int[] numbers, int position){
+    static int getSmallest(int[] numbers, int position){
         int smallest = position;
         for (int i = position; i < numbers.length; i++)
             if(numbers[i] < numbers[smallest])

@@ -3,7 +3,6 @@ package br.com.luiztaira.algorithms.sort;
 import java.util.Random;
 
 /**
- *
  * An Algorithm to sort an array of int, based on insertion method
  * This algorithm is not concerned in performance,
  * and it just shows how it works
@@ -38,7 +37,7 @@ public class InsertionSort {
      * @param numbers
      * @param offset
      */
-    private static void insertionSort(int[] numbers, int offset) {
+    static void insertionSort(int[] numbers, int offset) {
         for (int i = 1; i <= offset; i++){
             int analysing = i;
 
@@ -49,7 +48,7 @@ public class InsertionSort {
         }
     }
 
-    private static void changeNumbers(int[] numbers, int i, int j) {
+    static void changeNumbers(int[] numbers, int i, int j) {
         int numberAnalysing = numbers[i];
         int numberBefore = numbers[j];
 

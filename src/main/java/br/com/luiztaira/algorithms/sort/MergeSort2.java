@@ -33,7 +33,7 @@ public class MergeSort2 {
      * @param end
      * @return a sorted chunk
      */
-    private static int[] intercalate(int[] numbers, int begin, int middle, int end){
+    static int[] intercalate(int[] numbers, int begin, int middle, int end){
         int[] newArray = new int[end - begin];
         int current = 0;
         int current1 = begin;

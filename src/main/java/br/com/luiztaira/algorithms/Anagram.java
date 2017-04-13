@@ -20,7 +20,7 @@ public class Anagram {
      * @param str2
      * @return
      */
-    private static boolean isAnagram1(String str1, String str2) {
+    static boolean isAnagram1(String str1, String str2) {
         if(str1.length() != str2.length())
             return false;
 
