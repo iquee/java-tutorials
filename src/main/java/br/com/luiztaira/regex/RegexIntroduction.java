@@ -21,4 +21,26 @@ public class RegexIntroduction {
             System.out.println("Matcher found: " + matcher.group() + " at position: " + matcher.start());
 
     }
+
+    /**
+     * Given a regex, find it on string
+     *
+     * @param regex
+     * @param string
+     */
+    static void runRegex(String regex, String string){
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(string);
+        boolean foundIt = false;
+    
+        System.out.println("Regex: " + regex + " over \"" + string + "\"");
+        while (matcher.find()){
+            if (!matcher.group().isEmpty())
+                System.out.println("Matcher found this: " + matcher.group());
+            foundIt = true;
+        }
+    
+        if (!foundIt)
+            System.out.println("No matches found");
+    }
 }

@@ -1,1 +1,0 @@
-- In Strategy, we can create objects which represent more than one strategies where a object that execute the action, receive the algorithm and simple do

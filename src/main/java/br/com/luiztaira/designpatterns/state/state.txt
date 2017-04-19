@@ -1,1 +1,0 @@
-in the pattern state, we can change a state of object whic are represented by classes
