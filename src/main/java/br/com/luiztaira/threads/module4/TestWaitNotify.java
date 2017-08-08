@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads.module4;
+package br.com.luiztaira.threads1.module4;
 
 public class TestWaitNotify {
 
@@ -14,6 +14,6 @@ public class TestWaitNotify {
         new Thread(object2, "Object2").start();
 
         Notifier notifier = new Notifier(obj);
-        new Thread(notifier, "Notification").start();
+        new Thread(notifier, "Notification all objects").start();
     }
 }

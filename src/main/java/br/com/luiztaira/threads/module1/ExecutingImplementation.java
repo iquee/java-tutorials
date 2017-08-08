@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads.module1;
+package br.com.luiztaira.threads1.module1;
 
 /**
  * Sample code of Thread implements Runnable interface

@@ -1,11 +1,11 @@
-package br.com.luiztaira.threads.module3;
+package br.com.luiztaira.threads1.module3;
 
 public class MyList {
 
     private String[] elements = new String[100];
     private int index = 0;
 
-    // using synchronized, we guarantee that just one elemnt in a unique position
+    // using synchronized, we guarantee that just one element in a unique position
     public synchronized void addElement(String element){
         this.elements[this.index] = element;
         this.index++;

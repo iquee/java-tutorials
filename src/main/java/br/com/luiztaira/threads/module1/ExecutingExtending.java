@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads.module1;
+package br.com.luiztaira.threads1.module1;
 
 /**
  * Sample code of Thread extends Thread class
@@ -9,7 +9,7 @@ public class ExecutingExtending extends Thread {
     private int i = 0;
 
     @Override
-    public void run(){
+    public void run() {
         System.out.println("number: " + i++);
     }
 

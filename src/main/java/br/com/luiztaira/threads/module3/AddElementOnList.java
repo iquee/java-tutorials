@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads.module3;
+package br.com.luiztaira.threads1.module3;
 
 public class AddElementOnList implements Runnable {
 
