@@ -1,8 +1,8 @@
 package br.com.luiztaira.algorithms.sort;
 
 /**
- *  In bubble sort, we basically traverse the array from first
- *  to array_length - 1 position and compare the element with the next one.
+ *  In bubble sort, we basically traverse the array from first element of array
+ *  to (array.length - 1) position and compare the element with the next one.
  *  Element is swapped with the next element if the next element is greater.
  *  - Worst-case performance   O(n^{2})
  *  - Best-case performance	   O(n^{2})
@@ -27,6 +27,10 @@ public class BubbleSort {
             System.out.print(arr[i] + " ");
     }
 
+    /**
+     * Check array arr.length times
+     * @param arr
+     */
     static void bubbleSort(int[] arr) {
         int n = arr.length;
         int temp = 0;
