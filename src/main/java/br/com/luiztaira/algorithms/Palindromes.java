@@ -23,7 +23,7 @@ public class Palindromes {
     }
 
     /**
-     * Better performance then isPalindrome1
+     * Better performance than isPalindrome1
      *
      * No extra memory is used here,
      * no objects are instantiated
@@ -67,10 +67,10 @@ public class Palindromes {
         if(elapsed1 < elapsed2){
             // should never happen
             System.out.println("isPalindrome1 is "
-                    + ((elapsed2 - elapsed1)/1000.0) + " ns faster then isPalindrome2");
+                    + ((elapsed2 - elapsed1)/1000.0) + " ns faster than isPalindrome2");
         } else{
             System.out.println("isPalindrome2 is "
-                    + ((elapsed1 - elapsed2)/1000.0) + " ns faster then isPalindrome1");
+                    + ((elapsed1 - elapsed2)/1000.0) + " ns faster than isPalindrome1");
         }
     }
 }

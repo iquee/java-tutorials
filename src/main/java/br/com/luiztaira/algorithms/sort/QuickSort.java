@@ -66,11 +66,4 @@ public class QuickSort {
         numbers[from] = number2;
         numbers[to] = number1;
     }
-
-    private static void buildArray(int[] numbers){
-        Random random = new Random();
-        for (int i = 0; i < numbers.length; i++){
-            numbers[i] = random.nextInt();
-        }
-    }
 }

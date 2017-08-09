@@ -52,7 +52,7 @@ public class TestOperators {
          */
         // &&  Conditional-AND
         // ||  Conditional-OR
-        // ?:  Ternary (shorthand for if-then-else statement)
+        // ?:  Ternary (shorthand for if-than-else statement)
 
 
         /**

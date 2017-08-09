@@ -30,7 +30,7 @@ public class Factorial {
     /**
      * Recursive method.
      * But calculate and store the accumulator
-     * then, return the accumulator without execute n times
+     * than, return the accumulator without execute n times
      *
      * @param accumulator
      * @param n
