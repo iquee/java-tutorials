@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads1.module3;
+package br.com.luiztaira.threads.module3;
 
 public class Principal {
     public static void main(String[] args) throws InterruptedException {

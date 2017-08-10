@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads1.module4;
+package br.com.luiztaira.threads.module4;
 
 public class ProcessObject implements Runnable{
     private Object obj;

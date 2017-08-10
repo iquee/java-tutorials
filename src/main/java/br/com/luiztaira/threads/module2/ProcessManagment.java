@@ -1,4 +1,4 @@
-package br.com.luiztaira.threads1.module2;
+package br.com.luiztaira.threads.module2;
 
 public class ProcessManagment {
 
