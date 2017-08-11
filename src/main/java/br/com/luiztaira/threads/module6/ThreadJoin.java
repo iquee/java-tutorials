@@ -1,7 +1,7 @@
 package br.com.luiztaira.threads.module6;
 
 /**
- *
+ * With the join() method, we can control two Threads
  */
 public class ThreadJoin {
 
@@ -11,7 +11,7 @@ public class ThreadJoin {
 
         Thread y = new Thread(new Runnable () {
             public void run() {
-                new PrintNumbers().run();
+                new PrintNumbers(Integer.MAX_VALUE).run();
             }
         });
         y.start(); // starting Thread y
@@ -19,6 +19,6 @@ public class ThreadJoin {
 
         System.out.println("------------------");
         System.out.println("Starting Thread t1");
-        new Thread(new PrintNumbers(), "t1").start();
+        new Thread(new PrintNumbers(1000), "t1").start();
     }
 }
