@@ -16,7 +16,7 @@ public class TaskServer {
 
 		System.out.println("Starting server....");
 		ServerSocket server = new ServerSocket(12345);
-		// newCachedThreadPool increase and descrease automatic after 60 sec
+		// newCachedThreadPool increase and decrease automatic after 60 sec
 		ExecutorService threadPool = Executors.newCachedThreadPool();
 
 		System.out.println("Waiting connections....");
