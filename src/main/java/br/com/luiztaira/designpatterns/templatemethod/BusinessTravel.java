@@ -2,7 +2,7 @@ package br.com.luiztaira.designpatterns.templatemethod;
 
 import java.util.Scanner;
 
-public class BusinessTravel extends  Process {
+public class BusinessTravel extends Process {
 
     String name = "";
     String travelTo = "";
