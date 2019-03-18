@@ -38,8 +38,7 @@ public class InsertionSort {
      * @param offset
      */
     static void insertionSort(int[] numbers, int offset) {
-        for (int i = 1; i <= offset; i++){
-            int analysing = i;
+        for (int i = 1; i <= offset; i++){           
 
             while(i > 0 && (numbers[i] < numbers[i - 1])) {
                 changeNumbers(numbers, i, i-1);

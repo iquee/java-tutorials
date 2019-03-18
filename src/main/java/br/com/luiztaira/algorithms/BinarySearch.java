@@ -1,12 +1,17 @@
 package br.com.luiztaira.algorithms;
 
+/**
+ * Binary search only works on sorted arrays
+ *
+ * If is a unsorted array, it must be a Linear Search
+ */
 public class BinarySearch {
 
     public static void main(String[] args) {
 
-        int[] array ={1,5,6,3,-9,20};
+        int[] array ={-9,0,1,2,3,4,5,8,9};
         Algorithm a = new Algorithm(array);
-        System.out.println(a.bynarySearch(0, array.length, 3));
+        System.out.println(a.bynarySearch(0, array.length, 5));
     }
 }
 
