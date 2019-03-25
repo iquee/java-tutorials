@@ -5,13 +5,14 @@ public class Principal {
         MyList list = new MyList();
 
         for (int i = 0; i < 10; i++) {
-            new Thread(new AddElementOnList(list, i)).start();
+        	ListManagment add = new ListManagment(list, i);
+            new Thread(add).start();
         }
 
         Thread.sleep(1000);
 
         for (int i = 0; i < list.getSize(); i++) {
-            System.out.println(i + " " + list.getElement(i));
+            System.out.println(list.getElement(i));
         }
     }
 }

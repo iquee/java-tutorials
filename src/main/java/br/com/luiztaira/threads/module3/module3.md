@@ -10,4 +10,3 @@ Set conjunto = Collections.synchronizedSet(new HashSet());
 
 About Queue interface:
 - ArrayBlockingQueue is an implementation of thread-safe
-

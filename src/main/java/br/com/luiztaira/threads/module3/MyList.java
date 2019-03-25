@@ -6,8 +6,8 @@ public class MyList {
     private int index = 0;
 
     // using synchronized, we guarantee that just one element in a unique position
-    public synchronized void addElement(String element){
-        this.elements[this.index] = element;
+    public synchronized void addElement(int threadNumber, int element) {
+        this.elements[this.index] = "Adding element " + element + " in Thread " + threadNumber;
         this.index++;
     }
 
@@ -18,5 +18,4 @@ public class MyList {
     public String getElement(int position){
         return this.elements[position];
     }
-
 }
