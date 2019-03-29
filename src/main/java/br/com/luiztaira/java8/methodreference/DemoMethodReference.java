@@ -15,14 +15,13 @@ import java.util.function.Function;
  * - A method reference to a constructor.
  *  
  *  
- *  Some examples of new functioonal interfaces:
+ *  Some examples of new functional interfaces:
  *  
  *  Function<T, R> − recebe T como entrada, retorna R como saída;
  *  Predicate<T> − recebe T como entrada, retorna um valor booleano como saída;
  *  Consumer<T> − recebe T como entrada, não retorna nada como saída;
  *  Supplier<T> − não recebe entrada, retorna T como saída;
  *  BinaryOperator<T> − recebe duas entradas T, retorna um T como saída.
- *
  * 
  */
 public class DemoMethodReference {
@@ -31,6 +30,11 @@ public class DemoMethodReference {
     	
     	Random random = new Random();
     	int i = 0;
+        
+        // A method reference to a static method.
+        Consumer<Integer> c = CheckNumber::addingInt;
+        c.accept(random.nextInt());
+        System.out.println("");
     	
     	// A method reference to an instance method of an object of a particular type.
     	i = random.nextInt();
@@ -38,11 +42,6 @@ public class DemoMethodReference {
         Function<Integer, Boolean> f = cn::isEven;
         boolean result = f.apply(i);
         System.out.println("Number " +i+ " is even? -> " + result);        
-        System.out.println("");
-        
-        // A method reference to a static method.
-        Consumer<Integer> c = CheckNumber::addingInt;
-        c.accept(random.nextInt());
         System.out.println("");
         
         List<Player> players = new ArrayList<>();

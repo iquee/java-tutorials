@@ -15,14 +15,14 @@ public class LambdaExpressions {
 
 	public static void main(String[] args) {
 		
-		List<String> names = null;		
+		List<String> names = null;
 		
 		names = Arrays.asList("carlos", "alana", "zuleika");
-		// create comparator using lambda		
+		// create comparator using lambda
 		Comparator<String> comparator = (s1, s2) -> s1.compareTo(s2);
 		names.sort(comparator);
 		System.out.println(names);
-		System.out.println("-----");		
+		System.out.println("-----");
 				
 		names = Arrays.asList("ivy", "troy", "mark", "ander");
 		// passing comparator directly as argument using lambda
@@ -31,7 +31,7 @@ public class LambdaExpressions {
 		System.out.println("------");
 		
 		// creating a single Thread, with one instructions, using lambda and call start
-		new Thread(() -> System.out.println("new Thread 1")).start();		
+		new Thread(() -> System.out.println("new Thread 1")).start();
 		
 		// creating a single Thread, with many instructions, using lambda
 		new Thread(() -> {
