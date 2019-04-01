@@ -7,16 +7,14 @@ import java.util.Optional;
 
 public class DemoOptional {
 	
-	String name = "Mary";
-	
 	public static void main(String[] args) {
 		
-		DemoOptional dop = new DemoOptional();
-		// if dop.nome is not null
-		Optional<String> optional1 = Optional.of("DemoOptional"); 
-		Optional<String> optional2 = Optional.empty();
-		Optional<String> optional3 = Optional.ofNullable(dop.name);
+		String name = null;
 		
+		// if dop.nome is not null, it's ok to use .of
+		Optional<String> optional1 = Optional.of("DemoOptional"); 
+		Optional<String> optional2 = Optional.empty();		
+		Optional<String> optional3 = Optional.ofNullable(name);		
 		System.out.println(optional1);
 		System.out.println(optional2);
 		System.out.println(optional3);
@@ -28,8 +26,8 @@ public class DemoOptional {
 		if(optional2.isPresent())
 			System.out.println(optional2.get());
 		else
-			System.out.println(optional2.orElse("Nothing to print"));
-		System.out.println(optional3.get());
+			System.out.println(optional2.orElse("Nothing to print"));		
+		System.out.println(optional3.isPresent() ? optional3.get() : "Optional3 is null");
 		
 		System.out.println("");
 		
