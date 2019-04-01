@@ -7,14 +7,14 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class DemoStreams {
+public class DemoStreams1 {
 	
 	public static void main(String[] args) {
 		// creating Stream
 		System.out.println("Creating Stream");
 		String[] arr = new String[]{"a", "b", "c"};
 		Stream<String> stream = Arrays.stream(arr);
-		Consumer<String> consumer = s1 -> System.out.println(s1);		
+		Consumer<String> consumer = s1 -> System.out.println(s1.concat("-hi"));		
 		stream.forEach(s -> consumer.accept(s));
 		
 		System.out.println("");
