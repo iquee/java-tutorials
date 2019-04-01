@@ -38,8 +38,7 @@ public class DemoOptional {
 		System.out.println(user);
 		
 		//user = Optional.ofNullable(justNull).orElseThrow(IllegalArgumentException::new);
-		//System.out.println(user);
-		
+		//System.out.println(user);		
 		
 		// using filter
 		Optional<Integer> yearOptional = Optional.of(LocalDate.now().getYear());
