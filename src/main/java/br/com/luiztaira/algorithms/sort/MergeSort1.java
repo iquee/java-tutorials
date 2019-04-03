@@ -1,7 +1,5 @@
 package br.com.luiztaira.algorithms.sort;
 
-import java.util.Random;
-
 /**
  * Basic implementation of merge sort
  * given two arrays, already sorted, merge both and sort
