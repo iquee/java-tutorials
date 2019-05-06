@@ -9,12 +9,12 @@ public class DemoOptional {
 	
 	public static void main(String[] args) {
 		
-		String name = null;
+		String name = null;		
 		
-		// if dop.nome is not null, it's ok to use .of
-		Optional<String> optional1 = Optional.of("DemoOptional"); 
+		String lastName = "Silva";
+		Optional<String> optional1 = Optional.of(lastName); // if lastName is not null, it's ok to use .of 
 		Optional<String> optional2 = Optional.empty();		
-		Optional<String> optional3 = Optional.ofNullable(name);		
+		Optional<String> optional3 = Optional.ofNullable(name);
 		System.out.println(optional1);
 		System.out.println(optional2);
 		System.out.println(optional3);
@@ -56,6 +56,13 @@ public class DemoOptional {
 	    Optional<Truck> optTruck = Optional.of(truck);
 	    Integer engine = optTruck.flatMap(Truck::getEngine).orElse(0);
 	    System.out.println(engine);
+	    
+	    
+	    // check if list is not null
+	    List<String> list = null;
+	    Optional<List<String>> optional = Optional.ofNullable(list);
+	    optional.isPresent();
+	    
 	}
 	
 	static class Truck{
