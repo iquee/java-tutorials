@@ -68,7 +68,7 @@ public class LambdaExpressions {
 		// 3 ways to order de Age using lambda and method reference
 		devs.sort(Comparator.nullsLast(Comparator.comparing(dev -> dev.getAge())));
 		devs.sort(Comparator.nullsLast(Comparator.comparingInt(Developer::getAge).thenComparing(Developer::getName))); // comparingInt because Autoboxing
-		devs.sort(Comparator.nullsLast((Developer o1, Developer o2) -> o1.getAge() - o2.getAge()));
+		devs.sort(Comparator.nullsLast((Developer o1, Developer o2) -> o1.getAge() - o2.getAge()));		
 		System.out.println("Sorting by age");
 		devs.forEach((developer) -> System.out.println(developer));
 		System.out.println("");
